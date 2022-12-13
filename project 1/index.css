@@ -20,6 +20,13 @@ i{
     left: 8rem;
     
 }
+.nav-link{
+    font-size: 1.2rem;
+}
+.nav-link:hover, .author:hover{
+    color: crimson;
+    transition: ease 0.8s;
+}
 
 #about{
     position: relative;
@@ -27,13 +34,30 @@ i{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto ;
     height: 50rem;
-    align-items: center;
-    text-align: center;
     
 }
-.para{
+
+.container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+#about .h3-heading{
+    text-align: center;
+}
+#about .para{
+    word-wrap: break-word;
     text-align: left;
     margin-left: 5rem;
+    font-size: 0.95rem;
+}
+.container-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .author-img{
@@ -43,9 +67,11 @@ i{
 }
 /* button links */
 .links{
+    display: flex;
     grid-column-start: 1;
     grid-column-end: 3;
     align-items: center;
+    justify-content: center;
 }
 .links .btn{
     margin-right: 1rem;
@@ -65,8 +91,8 @@ i{
     width: 80%; 
     text-align: center; 
     border-bottom: 1px solid rgb(161, 158, 158); 
-    line-height: 0.1em;
-    margin: 2rem 9rem 3.3rem;
+    line-height: 0.6em;
+    margin: 2rem 9rem 1.3rem;
 }
 .awards{
     background:#fff; 
@@ -89,12 +115,12 @@ i{
 }
 /* other-link-section */
 .other-link-section{
+    height: 70vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
-    margin-left: 3rem;
     width: 70%;
-    margin:auto;
+    margin: 5rem auto 0rem auto;
 }
 .other-link{
     color: black;
@@ -112,6 +138,11 @@ i{
 .text-betwwen-line{
     background:#fff; 
     padding:0 0.7rem; 
+}
+.links-to-poetry, .links-to-songs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 /* footer */
