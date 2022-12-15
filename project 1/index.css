@@ -44,8 +44,6 @@ i{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    position: relative;
     align-items: center;
 }
 #about .h3-heading{
@@ -99,6 +97,7 @@ i{
     border-bottom: 1px solid rgb(161, 158, 158); 
     line-height: 0.6em;
     margin: 2rem auto 1.3rem;
+    font-size: 1.3rem;
 }
 .awards{
     background:#fff; 
@@ -180,6 +179,10 @@ i{
     .header{
         min-height: 8rem;
     }
+    .nav-link{
+        font-size: 0.9rem;
+        
+    }
     #about{
         grid-template-columns: 1fr;
        grid-template-areas: 
@@ -215,7 +218,6 @@ i{
        display: flex;
         flex-wrap: wrap;
        margin: auto;
-       width: 80%;
     
     }
 
